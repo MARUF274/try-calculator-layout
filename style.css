@@ -2,13 +2,14 @@
     padding: 0;
     margin: 0;
 }
-.print{
+.textview{
     margin-top: 0px;
     padding: 0 auto;
-    background-color: black;
+    background-color: pink;
     height: 200px;
     width: 900px;
 align-content: flex-end;
+font-size: 54px;
 }
 .cont{
     display: flex;
@@ -17,7 +18,7 @@ align-content: flex-end;
     width: 900px;
     height: 1100;
 }
-.cont > button{
+.button{
     background-color: lightpink;
     margin: 10px;
     padding: 20px;
@@ -25,7 +26,7 @@ align-content: flex-end;
     width: 200px;
     height: 200px;
 }
-.longcon > button{
+.longcon > input{
     background-color: lightpink;
     margin: 10px;
     padding: 20px;

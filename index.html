@@ -3,29 +3,53 @@
     <head>
         <title>Calculator</title>
         <link rel="stylesheet" href="style.css">
-        <script></script>
+        <script>
+//Func Insert
+        function insert(num){
+document.form.textview.value = document.form.textview.value+num
+        }
+
+//Output masih ada Undefined//
+function equal() {
+            var exp =  document.form.textview.value;
+            if(exp){
+                document.form.textview.value = eval(exp)
+        }
+        }
+        
+        </script>
     </head>
     <body>
-        <div class="print">12
-        </div>
+<form name="form">
+    <input class="textview" name="textview"></form>
+</form>
 <div class="cont">
-    <button onclick="myfunc1()">9</button>
-    <button onclick="myfunc2()">8</button>
-    <button onclick="myfunc3()">7</button>
-    <button onclick="mySpecFunc1()">x</button>
-    <button onclick="myfunc4()">6</button>
-    <button onclick="myfunc5()">5</button>
-    <button onclick="myfunc6()">4</button>
-    <button onclick="mySpecFunc2()">/</button>
-    <button onclick="myfunc7()">3</button>
-    <button onclick="myfunc8()">2</button>
-    <button onclick="myfunc9()">1</button>
-    <button onclick="mySpecFunc3()">+</button>
+   <input class="button" type="button" value="c">
+   <input class="button" type="button" value="<-">
+   <input class="button" type="button" value="%" onclick="insert('/')">
+   <input class="button" type="button" value="-" onclick="insert('-')">
+
+   <input class = "button" type="button" value="7" onclick="insert(7)">
+   <input class = "button" type="button" value="8" onclick="insert(8)">
+   <input class = "button" type="button" value="9" onclick="insert(9)">
+   <input class = "button" type="button" value="x" onclick="insert('*')">
+   
+   <input class = "button" type="button" value="4" onclick="insert(4)">
+   <input class = "button" type="button" value="5" onclick="insert(5)">
+   <input class = "button" type="button" value="6" onclick="insert(6)">
+   <input class = "button" type="button" value="/" onclick="insert('/')">
+
+   <input class = "button" type="button" value="1" onclick="insert(1)">
+   <input class = "button" type="button" value="2" onclick="insert(2)">
+   <input class = "button" type="button" value="3" onclick="insert(3)">
+   <input class = "button" type="button" value="+" onclick="insert('+')">
+
    <div class="longcon">
-    <button onclick="myfunc0()">0</button>
-   </div>
-    <button onclick="mySpecFunc4()">=</button>
-    <button onclick="mySpecFunc5()">-</button>
+    <input class="button" type="button" value="0" onclick="insert(0)">
+</div>
+    <input class="button" type="button" value="." onclick="insert('.')">
+    <input class="button" type="button" value="=" onclick="insert(equal())">
+    
 </div>
     </body>
 </Html>
